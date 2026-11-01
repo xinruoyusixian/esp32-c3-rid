@@ -1,0 +1,35 @@
+.codebuddy/
+archive/
+
+# Build directories
+build/
+managed_components/
+
+# Espressif specific
+# 注意：sdkconfig 故意纳入版本控制——CI（.github/workflows）靠它复现本机编译配置，
+# 已确认里面不含密钥与绝对路径。
+sdkconfig.old
+sdkconfig.defaults
+
+# IDE
+.vscode/
+.clangd/
+
+# OS
+.DS_Store
+Thumbs.db
+
+tools/.venv/
+env/
+__pycache__/
+*.pyc
+
+# 本地备份 / 临时日志（index_html.h.bak* 由 tools/html_tool.py 生成）
+*.bak
+*.bak*
+*.log
+build_src/.preview/
+
+# 抓屏校对产生的临时点阵/图片（脚本本身保留）
+.workbuddy/**/dumps/
+.codebuddy/
