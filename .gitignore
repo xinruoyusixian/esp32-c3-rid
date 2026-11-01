@@ -5,6 +5,11 @@ archive/
 build/
 managed_components/
 
+# 运行时 SQLite（rid_server 运行时生成，非源码，勿入库）
+*.db
+*.db-shm
+*.db-wal
+
 # Espressif specific
 # 注意：sdkconfig 故意纳入版本控制——CI（.github/workflows）靠它复现本机编译配置，
 # 已确认里面不含密钥与绝对路径。
